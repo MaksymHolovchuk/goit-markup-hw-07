@@ -1,0 +1,239 @@
+@media screen and (min-width:768px) {
+.container {
+    max-width: 766px;
+}
+.header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-сontainer {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;    
+}
+.header-nav{
+    display: flex;
+    align-items: center;    
+}
+.header-nav .logo {
+    padding-bottom: 22px;
+}
+.link {
+}
+.logo-two {
+}
+.header-list {
+    display: flex;
+    margin-left: 120px;
+}
+.header-list .header-item:not(:last-child) {
+    margin-right: 40px;
+}
+.header-list .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--accent-color);
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;  
+    transition: color var(--tra);    
+    }
+    .header-list .header-link:is(:hover,:focus){
+        color: var(--alternative-color)
+    }
+.header-item {
+}
+.header-link.current {
+    position: relative;
+    color: var(--alternative-color);
+}
+.address {
+    display: flex;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.04em; 
+    color: var(--second-title-color); 
+}
+.address-contact {
+    display: block; 
+}
+.message {
+    color: var(--second-title-color);   
+    display: block;
+    padding-top:  24px; ;
+    transition: color  var(--tra); 
+}
+.phone {
+    color: var(--second-title-color);
+    display: block;
+    padding-bottom: 12px;
+    transition: color var(--tra);
+}
+.mobile-menu-open {
+    display: none;
+}
+
+.address-contact .phone:is(:hover, :focus) {
+    color: var(--alternative-color);
+}
+.address-contact .message:is(:hover, :focus) {
+    color: var(--alternative-color);
+}
+.current::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    background-color: var(--alternative-color);
+    transition: color var(--tra);
+}
+.hero {
+    background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url('../images/hero-bg-tablet.jpg');
+}
+.hero-title {
+    color: var(--main-title-color);
+    width: 496px;
+    margin-bottom: 40px;
+    font-size: 56px;
+    line-height: 1.1;
+}
+.btn {
+}
+.btn-style {
+}
+.about {
+}
+.hidden {
+}
+.about-list {
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px; 
+}
+.about-list .about-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+}
+.about-soc {
+}
+.about-title {
+    text-align:left;
+}
+
+.team {
+    padding-bottom: 104px;
+}
+
+.team-title {
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+}
+.team-item:not(:last-child) {
+    margin-bottom: 0; 
+}
+
+.team-mobile {max-width: 584px;
+}
+.customers-list {
+    column-gap: 24px;    
+}
+.customers-item {
+    width: 168px;
+}
+.footer-container {
+    max-width: 584px;
+}
+.sub-input {
+    width: 264px;
+}
+.footer-content {
+    display: flex;
+    justify-content:flex-start;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.footer-info{
+    width: 264px;
+    height: 110px;
+    text-align:left;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-logo {
+    text-align: left;
+}
+.footer-logo-two {
+}
+.footer-text {
+}
+.footer-soc {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.sub-form-inp {
+    flex-direction: row;
+    gap: 24px;
+}
+
+.sub-title { display: block;
+    text-align: left;
+}
+.sub-form {
+}
+
+.card {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+.button-list {
+    flex-wrap: nowrap;
+    justify-content:center;
+    margin-bottom: 64px; 
+}
+.button-list .buttom-item:not(:last-child) {
+    margin-right: 24px;
+}
+/* .card-list {
+    column-gap: 24px;
+    row-gap: 72px;
+    width: auto;   */
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;   
+      } 
+}
+.card-list .card-items:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .card-items {
+        flex-basis: calc((100% - 24px) / 2); 
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero{
+background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)), url('../images/hero-bg-tablet@2x.jpg');
+}
+}
