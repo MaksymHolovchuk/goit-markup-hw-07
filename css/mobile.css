@@ -89,6 +89,8 @@
     border:1px solid rgba(0, 0, 0, 0.1); ;
     background: #E7E9FC;
     cursor: pointer;
+    padding: 0;
+    transition: background-color var(--tra), fill var(--tra);
 }
 .mobile-menu-close:is(:hover,:focus){
     background-color: var(--alternative-color);  
@@ -283,10 +285,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 }
 
 .about-list{ display: block;}
-
-.about-list .about-item:not(:last-child) {
-    margin-bottom: 72px;
-}
 
 .about-item { list-style-type:  none;
     width: 100%;
