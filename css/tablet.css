@@ -100,10 +100,13 @@
 }
 .hero-title {
     color: var(--main-title-color);
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 40px;
     font-size: 56px;
     line-height: 1.1;
+}
+.modal {
+
 }
 .btn {
 }
