@@ -122,6 +122,7 @@
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px; 
+    margin-bottom: 0;
 }
 .about-list .about-item {
     width: calc((100% - 24px) / 2);
